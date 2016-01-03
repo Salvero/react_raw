@@ -7,7 +7,7 @@ var ContactView = React.createClass({
   render: function() {
     var contactItemElements = this.props.contacts
       .filter(function(contact) {
-        return contact.email
+        return contact.email;
       })
       .map(function(contact){
         return React.createElement(ContactItem, contact)
